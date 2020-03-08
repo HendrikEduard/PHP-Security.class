@@ -35,12 +35,7 @@ class Secure {
   // Cryptographically secure random length random token
   // for session tokens, cookies and CSRF protection for forms
   public static function token() {
-    $token = '';
-    $count = 0;
-    while (++$count <= 3) {
-      $i = random_int(11, 22);
-      $token .= bin2hex(random_bytes($i));
-    }
+    $token = bin2hex(random_bytes(37));
     return $token;
   } // $_SESSION['secure_token'] = Secure::token();
 
