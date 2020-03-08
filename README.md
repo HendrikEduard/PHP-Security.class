@@ -17,6 +17,6 @@
 A secure method to verify the $id is a number  
 // Secure::id($id);  
   
-### Either require_once ''; or autoload this class to initialize it.  
+### Either 'require_once'; or autoload this class to initialize it.  
 #### If you need a simple autolaoder come ask on:  
 https://facebook.com/likeneverbefore.org
